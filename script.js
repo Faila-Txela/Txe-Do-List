@@ -23,13 +23,23 @@
   // Executar na primeira carga
   revealOnScroll();
 
-  function System() {
-    alert("Redirecionando para o sistema da Txe-Do List")
+ function System(){
+    Swal.fire({
+    title: 'Sucesso',
+    text: 'Redirecionando ao sistema da Txe-Do list',
+    icon: 'success'
+    })
+  setTimeout(() => {
     window.location = "/system/system.html"
-  }
+  }, 2000)
+ }
 
   function notFound() {
-    alert("Recurso indisponível no momento. ❌")
+    Swal.fire({
+    title: 'Aviso',
+    text: 'Recurso indisponível no momento.',
+    icon: 'warning'
+    })
   }
 
 
